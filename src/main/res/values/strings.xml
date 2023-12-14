@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EpicStock</string>
+    <string name="add_item">+</string>
+    <string name="home_message">Welcome to EpicStock! Your inventory management solution.</string>
+</resources>

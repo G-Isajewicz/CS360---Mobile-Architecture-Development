@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/forest_green">
+
+    <!-- Title Header -->
+    <TextView
+        android:id="@+id/header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/forest_green"
+        android:textColor="@android:color/white"/>
+    <View
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/black"
+        android:layout_alignLeft="@id/header_name"
+        android:layout_below="@id/header_name"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_message"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@color/forest_green"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:typeface="serif"
+        android:layout_below="@id/bar"
+        android:layout_alignLeft="@id/bar"/>
+
+    <Button
+        android:id="@+id/view_data"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="View Inventory"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/request_sms"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/view_data"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Enable Inventory Alerts"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/request_sms"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Logout"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

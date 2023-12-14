@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title Header -->
+    <TextView
+        android:id="@+id/header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/forest_green"
+        android:textColor="@android:color/white"/>
+
+    <!-- Inventory List -->
+    <TextView
+        android:id="@+id/item_label"
+        android:layout_width="269dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/header_name"
+        android:background="@color/black"
+        android:text="  Item Name"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/quantity_label"
+        android:layout_width="372dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/header_name"
+        android:layout_alignEnd="@id/item_label"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-370dp"
+        android:background="@color/black"
+        android:text=" Quantity"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/inventoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/item_label"
+        android:divider="@color/black"
+        android:dividerHeight="1dp">
+
+
+
+    </ListView>
+    <!-- Floating Action Button for Adding New Items -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_AddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/forest_green"
+        android:contentDescription="@string/add_item"
+        android:src="@android:drawable/ic_input_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/forest_green"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</RelativeLayout>

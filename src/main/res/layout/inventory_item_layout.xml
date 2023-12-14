@@ -1,0 +1,38 @@
+<!-- inventory_item_layout.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+
+    <!-- Delete Button for Each Item -->
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="#CAEAA5"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:tint="#070606" />
+
+    <TextView
+        android:id="@+id/itemNameTextView"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/deleteButton"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/quantityTextView"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/itemNameTextView"
+        android:textSize="30sp" />
+
+</RelativeLayout>
